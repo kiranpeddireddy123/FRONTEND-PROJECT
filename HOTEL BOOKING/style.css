@@ -1,0 +1,247 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0
+}
+
+body{
+font-family:Arial;
+background:#f4f6f9;
+color:#222
+}
+
+nav{
+background:#fff;
+padding:15px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px #ddd
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#2563eb
+}
+
+nav button,.btn{
+border:0;
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+margin:3px
+}
+
+.hero{
+height:400px;
+background:
+linear-gradient(#0008,#0008),
+url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200')
+center/cover;
+display:grid;
+place-items:center;
+text-align:center;
+color:white
+}
+
+.hero h1{
+font-size:45px
+}
+
+.search{
+background:white;
+padding:20px;
+max-width:1100px;
+margin:-30px auto 30px;
+border-radius:10px;
+box-shadow:0 4px 15px #bbb;
+display:flex;
+gap:10px
+}
+
+input,select{
+padding:11px;
+border:1px solid #ccc;
+border-radius:5px;
+flex:1
+}
+
+section{
+padding:40px 7%
+}
+
+h2{
+text-align:center;
+margin-bottom:25px
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 12px #ddd
+}
+
+.card img{
+width:100%;
+height:190px;
+object-fit:cover
+}
+
+.card div{
+padding:15px
+}
+
+.price{
+font-size:20px;
+color:#2563eb;
+font-weight:bold;
+margin:10px 0
+}
+
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:#0009;
+z-index:10;
+align-items:center;
+justify-content:center;
+padding:15px
+}
+
+.box{
+background:white;
+width:420px;
+max-width:100%;
+padding:25px;
+border-radius:10px;
+position:relative
+}
+
+.box h2{
+margin-bottom:15px
+}
+
+.box input,.box select{
+width:100%;
+margin:7px 0
+}
+
+.close{
+position:absolute;
+right:15px;
+top:8px;
+font-size:25px;
+cursor:pointer
+}
+
+#my{
+display:none
+}
+
+.booking{
+background:white;
+padding:18px;
+margin:15px auto;
+border-radius:8px;
+max-width:900px;
+box-shadow:0 2px 10px #ddd
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white
+}
+
+th,td{
+padding:12px;
+border:1px solid #ddd;
+text-align:left
+}
+
+th{
+background:#2563eb;
+color:white
+}
+
+.admin{
+display:none;
+padding:30px
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-bottom:25px
+}
+
+.stat{
+background:white;
+padding:20px;
+border-radius:8px;
+text-align:center;
+box-shadow:0 2px 8px #ddd
+}
+
+.stat b{
+font-size:25px;
+color:#2563eb;
+display:block
+}
+
+.table{
+overflow:auto
+}
+
+footer{
+background:#172033;
+color:white;
+text-align:center;
+padding:30px
+}
+
+@media(max-width:800px){
+.grid{
+grid-template-columns:1fr 1fr
+}
+.search{
+flex-wrap:wrap
+}
+.stats{
+grid-template-columns:1fr 1fr
+}
+}
+
+@media(max-width:550px){
+.grid{
+grid-template-columns:1fr
+}
+.hero h1{
+font-size:32px
+}
+.search{
+margin:15px;
+padding:15px
+}
+table{
+font-size:12px
+}
+nav{
+padding:15px 3%
+}
+nav button{
+padding:8px
+}
+}
